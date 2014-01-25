@@ -25,7 +25,7 @@ parms.Nin= (parms.sNin)*2.+parms.Nout # Actual number of inputs (time shifted an
 parms.inp_sc=.3*np.ones((1,parms.Nin))  # All inputs have same input scaling. However it is possible to customize this.
                                         # parms.inp_sc[:,[2,6]] = 0.1;
 
-parms.outpLimits np.array([[-1.,-1.,-1.],   # Under limit of MACOP output for every output
+parms.outpLimits = np.array([[-1.,-1.,-1.],   # Under limit of MACOP output for every output
                            [ 1., 1., 1.]])  # Upper limit of MACOP output for every output
 
 parms.spectr_rad=1.         # Spectral radius
